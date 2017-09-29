@@ -3,40 +3,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ca.bcit.tipcalculator.TableActivity">
+    tools:context="ca.bcit.tipcalculator.TableActivity"
+    android:weightSum="1">
     <TableRow>
         <TextView
             android:id="@+id/billAmountLabel"
             android:text="@string/bill_amount_label"
+            android:layout_width="wrap_content"
             android:textSize="20sp"
             android:textStyle="bold"
             android:padding="10dp"
             android:layout_margin="8dp"
             />
         <EditText
+            android:layout_span="3"
+            android:layout_margin="8dp"
             android:id="@+id/billAmountEditText"
             android:inputType="numberDecimal"
             android:padding="10dp"
             />
     </TableRow>
 
+    <!-- Percent Row -->
     <TableRow>
         <TextView
-            android:id="@+id/percentLabel"/>
+            android:id="@+id/percentLabel"
+            android:text="@string/tip_percent_label"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            />
         <TextView
-            android:id="@+id/percentTextView"/>
+            android:id="@+id/percentTextView"
+            android:text="@string/tip_percent"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+
+            />
         <Button
-            android:id="@+id/percentDownButton"/>
+            android:id="@+id/percentDownButton"
+            android:text="@string/decrease"
+            android:layout_margin="8dp"
+            />
         <Button
-            android:id="@+id/percentUpButton"/>
+            android:id="@+id/percentUpButton"
+            android:text="@string/increase"
+            android:layout_margin="8dp"/>
     </TableRow>
+
+    <!-- Tip Amount -->
     <TableRow>
-        <TextView />
-        <TextView />
+        <TextView
+            android:id="@+id/tipLabel"
+            android:text="@string/tip_amount_label"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:id="@+id/tipTextView"
+            android:text="@string/tip_amount"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            />
     </TableRow>
+
+    <!-- Total amount -->
     <TableRow>
-        <TextView />
-        <TextView />
+        <TextView
+            android:id="@+id/totalLabel"
+            android:text="@string/total_amount_label"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/totalTextView"
+            android:text="@string/total_amount"
+            android:textSize="20sp"/>
     </TableRow>
 
 </TableLayout>

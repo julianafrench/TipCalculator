@@ -21,4 +21,9 @@ public class MainActivity extends Activity {
         Intent i = new Intent(this, LinearActivity.class);
         startActivity(i);
     }
+
+    protected void onTableClick(View v) {
+        Intent i = new Intent(this, TableActivity.class);
+        startActivity(i);
+    }
 }

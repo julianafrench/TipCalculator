@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".ConstraintActivity" />
         <activity android:name=".LinearActivity" />
-        <activity android:name=".TableActivity"></activity>
+        <activity android:name=".TableActivity" />
+        <activity android:name=".GridActivity" />
+        <activity android:name=".RelativeActivity"></activity>
     </application>
 
 </manifest>
