@@ -17,4 +17,8 @@ public class MainActivity extends Activity {
         Intent i = new Intent(this, ConstraintActivity.class);
         startActivity(i);
     }
+    protected void onLinearClick(View v) {
+        Intent i = new Intent(this, LinearActivity.class);
+        startActivity(i);
+    }
 }

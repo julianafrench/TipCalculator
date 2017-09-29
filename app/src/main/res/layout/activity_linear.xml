@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ca.bcit.tipcalculator.LinearActivity"
+    android:weightSum="1">
+
+    <!-- first row (initial bill amount) -->
+
+    <!-- Second row (percent) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/billAmountLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight=".4"
+            android:padding="10dp"
+            android:text="@string/bill_amount_label"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/billAmountEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="0.5"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:text="@string/bill_amount"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/percentLabel"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:text="@string/tip_percent_label"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight=".5"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/percentTextView"
+            android:padding="5dp"
+            android:text="@string/tip_percent"
+            android:textSize="20sp"
+            android:layout_weight=".2"/>
+
+        <Button
+            android:id="@+id/percentDownButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrease"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/percentUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/increase"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <!-- Third row (tip dollar amount) -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tipLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:padding="10dp"
+            android:text="@string/tip_amount_label"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="25dp"/>
+
+        <TextView
+            android:id="@+id/tipTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:padding="5dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/tip_amount"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- Fourth Row (total amount) -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalLabel"
+            android:text="@string/total_amount_label"
+            android:padding="10dp"
+            android:layout_marginStart="25dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight=".1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalTextView"
+            android:text="@string/total_amount"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_weight="0.1"
+            />
+    </LinearLayout>
+
+</LinearLayout>
