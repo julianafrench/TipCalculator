@@ -23,6 +23,11 @@ public class MainActivity extends Activity {
         startActivity(i);
     }
 
+    protected void onRelativeClick(View v) {
+        Intent i = new Intent(this, RelativeActivity.class);
+        startActivity(i);
+    }
+
     protected void onGridClick(View v) {
         Intent i = new Intent(this, GridActivity.class);
         startActivity(i);
